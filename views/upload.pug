@@ -1,0 +1,16 @@
+extends index
+
+block content
+  main.main
+    .login-form
+      h2.heading-secondary.ma-bt-lg Zoom Meeting Registration
+      form.form.form--login
+        .form__group
+          label.form__label(for='excelFile') Upload Excel File
+          input#excelFile.form__input(type='file', accept='.xlsx, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel' , required)
+        .form__group.ma-bt-md
+          label.form__label(for='meetingId') Zoom Meeting ID
+          input#meetingId.form__input(type='number', placeholder='320829182', required, minlength='10')
+        .form__group
+          button#register.btn.btn--green Register
+          div#spinner
