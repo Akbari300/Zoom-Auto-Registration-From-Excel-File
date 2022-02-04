@@ -1,2 +1,2 @@
-# Simple case for testing ExcelJS library with NodeJS
+# NodeJs project: Zoom Auto registration from excel file
 
