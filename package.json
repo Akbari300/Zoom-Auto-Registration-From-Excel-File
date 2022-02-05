@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "start:prod": "SET NODE_ENV=production & nodemon app.js",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
     "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
@@ -26,5 +27,8 @@
     "pug": "^3.0.2",
     "request": "^2.87.0",
     "request-promise": "^4.2.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }
