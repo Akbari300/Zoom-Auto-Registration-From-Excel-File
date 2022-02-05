@@ -1,4 +1,5 @@
 const express = require('express');
+const compression = require('compression');
 const Dotenv = require('dotenv');
 const morgan = require('morgan');
 const path = require('path');
@@ -9,6 +10,8 @@ app.use(express.json());
 
 Dotenv.config({path: './config.env'});
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(compression());
 
 if(process.env.NODE_ENV === 'development')
 {
