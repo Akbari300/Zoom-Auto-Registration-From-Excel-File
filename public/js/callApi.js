@@ -18,16 +18,16 @@ export const callRegiserApi = async(meetingId,data)=>{
             showAlert('success','Successfully registered');
             document.getElementById('register').style.display = "block";
 
-            // window.setTimeout(()=>{
-            //     location.assign('/');
-            // }, 5000);
+            window.setTimeout(()=>{
+                location.assign('/');
+            }, 5000);
         }
     }catch(err){
         document.getElementById('spinner').classList.remove('loader');
         document.getElementById('register').style.display = "block";
         showAlert('error',err.response.data.message);
-        // window.setTimeout(()=>{
-        //     location.assign('/');
-        // }, 5000);
+        window.setTimeout(()=>{
+            location.assign('/');
+        }, 5000);
     }
 }

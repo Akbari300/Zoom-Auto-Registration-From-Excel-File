@@ -37,9 +37,9 @@ export const excleToJson = (meetingId,file)=>{
                 }
                 else{
                     showAlert('error',"EXCEL File IS NOT in CORRECT FORMAT");
-                    // window.setTimeout(()=>{
-                    //     location.assign('/');
-                    // }, 1500);
+                    window.setTimeout(()=>{
+                        location.assign('/');
+                    }, 1500);
                 }
                 
             });	
