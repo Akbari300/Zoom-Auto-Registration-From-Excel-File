@@ -19,7 +19,15 @@ export const excleToJson = (meetingId,file)=>{
                         for(var j=0;j<headers.length - 1;j++){
                             obj[headers[j]] = row.getCell(j+1).value;
                         }
-                        obj[headers[2]]= row.getCell(3).value.text;
+                        if(typeof row.getCell(3).value === 'object'){
+                            obj[headers[2]]= row.getCell(3).value.text; 
+                            // console.log("hyperlink: ", row.getCell(3).value.text);
+                        }
+                        else{
+                            // console.log("text: ", row.getCell(3).value);
+                            obj[headers[2]]= row.getCell(3).value;
+                        }
+                        
     
                         if(obj.first_name!= 'First_Name')
                             result1.push(obj);
@@ -29,9 +37,9 @@ export const excleToJson = (meetingId,file)=>{
                 }
                 else{
                     showAlert('error',"EXCEL File IS NOT in CORRECT FORMAT");
-                    window.setTimeout(()=>{
-                        location.assign('/');
-                    }, 1500);
+                    // window.setTimeout(()=>{
+                    //     location.assign('/');
+                    // }, 1500);
                 }
                 
             });	
