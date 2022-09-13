@@ -33,9 +33,15 @@ In order to use the project follow the bellow steps
    nodeman app.js
    ```
    
- ### DEMO 
+6. Browse the url
+   ```sh
+   localhost:3000
+   ```
+  
+7. Prepare your registration list using the excel file in /public/excelfile
 
-![DEMO](https://github.com/Akbari300/Zoom-Auto-Registration-From-Excel-File.git/blob/main/public/img/interface_demo.PNG?raw=true)
+   
+
 
  
  
