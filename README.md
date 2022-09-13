@@ -35,7 +35,7 @@ In order to use the project follow the bellow steps
    
  ### DEMO 
 
-<a href="url"><img src="https://github.com/Akbari300/Zoom-Auto-Registration-From-Excel-File-/blob/main/public/img/interface_demo.PNG" align="left" height="500" width="260" ></a>
+<a href="url"><img src="https://github.com/Akbari300/Zoom-Auto-Registration-From-Excel-File.git-/blob/main/public/img/interface_demo.PNG" align="left" height="500" width="260" ></a>
  
  
 
