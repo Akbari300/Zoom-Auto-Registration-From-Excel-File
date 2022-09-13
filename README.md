@@ -1,13 +1,14 @@
-# NodeJs project: Zoom Auto registration from excel file
+# NodeJs project - Zoom Auto registration from excel file
 
-# Screen Video
-https://share.vidyard.com/watch/A9m7TUu4oonjFsfcitjHgu?
+### Built With
 
-## technology used 
-### NodeJs
-### Express
-### Pug template 
-### parcel-bundling 
-### axios 
+The project developed using the following technologies 
+
+* [![Node][Node.js]][Node-url]
+* [![Express][Express.js]][Express-url]
+* [![Pug][Pugjs.org]][Pug-url]
+* [![Axios][Axios-http.com]][Axios-url]
+* [![Parcel-bundling][parceljs.org][Parcel-url]
+
 
 
